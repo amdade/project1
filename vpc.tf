@@ -97,12 +97,12 @@ resource "aws_security_group" "sgweb" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
 
-  vpc_id="${aws_vpc.test-vpc.id}"
+  vpc_id="${aws_vpc.test-vpc.id}" 
 
   tags {
     Name = "Web Server SG"
   }
-}
+
 
   count = 2
 }
