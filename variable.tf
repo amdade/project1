@@ -19,8 +19,3 @@ variable "ami" {
   description = "Amazon Linux AMI"
   default = "ami-0de53d8956e8dcf80"
 }
-
-variable "key_name" {
-  description = "SSH Public Key path"
-  default = "project"
-}
