@@ -9,7 +9,7 @@ variable "public_subnet_cidr" {
   description = "CIDR for the public subnet"
   default = "10.0.1.0/24"
 }
-variable "vpc_security_group_ids" {
+variable "vpc_security_group" {
     default = "vpc_test_web"
 }
 
