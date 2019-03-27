@@ -44,7 +44,7 @@ resource "aws_route_table" "web-public-rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = "${aws_internet_gateway.gw.id}"
+    gateway_id = "${aws_internet_gateway.igw.id}"
   }
 
   tags {
