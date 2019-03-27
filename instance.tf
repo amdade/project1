@@ -4,7 +4,7 @@ resource "aws_key_pair" "project" {
 }
 
 # Define webserver inside the public subnet
-resource "aws_instance" "linux-web" {
+resource "aws_instance" "linux" {
    ami  = "${var.ami}"
    instance_type = "t2.micro"
    key_name = "${aws_key_pair.project.id}"
@@ -15,6 +15,6 @@ resource "aws_instance" "linux-web" {
    
 
   tags {
-    Name = "webserver"
+    Name = "linux"
   }
 }
