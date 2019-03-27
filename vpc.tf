@@ -50,7 +50,7 @@ resource "aws_route_table_association" "web-public-rt" {
 }
 
 # Define the security group for public subnet
-resource "aws_security_group" "sgweb" {
+resource "aws_security_group" "vpc_test_web" {
   name = "vpc_test_web"
   description = "Allow incoming HTTP connections & SSH access"
 
