@@ -10,7 +10,7 @@ variable "public_subnet_cidr" {
   default = "10.0.1.0/24"
 }
 variable "vpc_security_group_ids" {
-    default = "vpc_test_web
+    default = "vpc_test_web"
 }
 
 variable "ami" {
