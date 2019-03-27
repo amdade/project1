@@ -6,7 +6,7 @@ resource "aws_instance" "linux" {
    instance_type = "t2.micro"
    key_name = "project"
    subnet_id = "${aws_subnet.public-subnet.id}"
-   vpc_security_group_ids = ["${var.aws_vpc_security_group.ids}"]
+   vpc_security_group_ids = ["${var.vpc_test_web}"]
    associate_public_ip_address = true
    source_dest_check = false
    
