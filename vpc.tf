@@ -18,16 +18,7 @@ resource "aws_subnet" "public-subnet" {
   }
 }
 
-# Define the private subnet
-resource "aws_subnet" "private-subnet" {
-  vpc_id = "${aws_vpc.test-vpc.id}"
-  cidr_block = "${var.private_subnet_cidr}"
-  availability_zone = "us-east-1b"
 
-  tags {
-    Name = "Database Private Subnet"
-  }
-}
 
 # Define the internet gateway
 resource "aws_internet_gateway" "igw" {
